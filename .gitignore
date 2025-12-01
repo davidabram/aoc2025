@@ -23,3 +23,21 @@ __pycache__/
 target/
 dist/
 build/
+
+# OCaml / opam / dune
+_build/
+*.cmi
+*.cmo
+*.cmx
+*.cmt
+*.cmti
+*.cma
+*.cmxa
+*.a
+*.so
+*.native
+*.byte
+.merlin
+_opam/
+*.install
+.dune/
