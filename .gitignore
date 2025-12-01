@@ -1,0 +1,25 @@
+# Nix
+.direnv/
+result
+result-*
+
+# Advent of Code inputs (personal/unique data)
+input.txt
+inputs/
+*.input
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Compiled/generated files
+*.o
+*.pyc
+__pycache__/
+target/
+dist/
+build/
