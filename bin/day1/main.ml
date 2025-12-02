@@ -1,14 +1,14 @@
-let coc_size = 100
+let dial_size = 100
 
 let rotate (pos, dir, steps) =
-  let steps = steps mod coc_size in
+  let steps = steps mod dial_size in
   match dir with
   | 'R' ->
       let pos' = pos + steps in
-      if pos' >= coc_size then pos' - coc_size else pos'
+      if pos' >= dial_size then pos' - dial_size else pos'
   | 'L' ->
       let pos' = pos - steps in
-      if pos' < 0 then pos' + coc_size else pos'
+      if pos' < 0 then pos' + dial_size else pos'
   | _ -> invalid_arg "A hwat?"
 
 let parse_move (line) = Scanf.sscanf line " %c%d" (fun dir n -> (dir, n))
